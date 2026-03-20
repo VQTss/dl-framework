@@ -71,6 +71,11 @@ def relu(x) -> np.ndarray:
     x = np.array(x)
     return np.where(x > 0, x, 0)
 
+# Swish activation function
+def swish(x) -> np.ndarray:
+    x = np.array(x)
+    sigmoid = 1 / (1 + np.exp(-x))
+    return x * sigmoid
 
 # Activation Functions Dictionary
 ACTIVATION_FUNCTIONS = {
