@@ -11,6 +11,5 @@ opencv-python
 pillow
 tqdm
 tensorboard
-requests
 fire
-jupyter
+notebook
